@@ -6,5 +6,7 @@
 2) f95eb5a85204a07e061efc5845c85b11eaa98698  
 4.Для створення гілки git branch new_branch, щоб перейти на іншу гілку git checkout new_branch, щоб запушити на іншу гілку git push origin new_branch  
 5.Змін не відбулось, бо вони здійснювалиссь на іншій гілці  
-6.При об'єднанні гілок відбувся конфлікт у файлі README.md, був вирішений вручну
+6.При об'єднанні гілок відбувся конфлікт у файлі README.md, був вирішений вручну  
+7.Я думаю, що конфлікт виник через те, що файл мав однакову назву і для вирішення цього конфлікту файл злився в один, подописувавши певні дані Auto-merging README.md CONFLICT (content): Merge conflict in README.md Automatic merge failed; fix conflicts and then commit the result (потім був відреагований мною)  
+
 
