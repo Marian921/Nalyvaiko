@@ -35,4 +35,4 @@
 
 14. запустив серверок - всьо ок:
 ![](./img/serverok.png)
-![](./img/health_rok.png)
+![](./img/health_ok.png)
