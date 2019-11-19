@@ -1,0 +1,24 @@
+version: '3.7'
+services:
+ django:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nalyvai/lab4:django-compose
+    container_name: django-comp
+    ports:
+      - 8000:8000
+ monitoring:
+    build:
+      context: .
+      dockerfile: Dockerfile.monitoring
+    image: nalyvai/lab4:monitoring-compose
+    container_name: monitoring-comp 
+    network_mode: "host"
+    depends_on:
+        - django
+    volumes:
+      - monitoring-data:/app
+volumes:
+  monitoring-data:
+    driver: local
